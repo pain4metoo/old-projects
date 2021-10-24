@@ -1273,6 +1273,18 @@ main {
       transform: scale(1.1);
     }
   }
+  &__logo {
+    font-size: 17px;
+    line-height: 25px;
+    color: white;
+    font-weight: 400;
+    margin: 0;
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover {
+      color: rgb(177, 177, 137);
+    }
+  }
   &__logo__img-1 {
     margin-right: 50px;
     width: 70px;

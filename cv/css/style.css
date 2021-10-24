@@ -1548,6 +1548,20 @@ main {
   margin: 0;
 }
 
+.footer__logo {
+  font-size: 17px;
+  line-height: 25px;
+  color: white;
+  font-weight: 400;
+  margin: 0;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.footer__logo:hover {
+  color: #b1b189;
+}
+
 .footer__logo__img {
   width: 70px;
   height: 70px;
