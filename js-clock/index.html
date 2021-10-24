@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../js-clock/assets/img/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/style.css" id="theme" />
+  </head>
+  <body>
+    <div class="preload">
+      <div class="loader"></div>
+    </div>
+    <div class="data">
+      <div class="data__inner">
+        <p class="data__text data__name"></p>
+        <p class="data__text data__count"></p>
+        <p class="data__text data__month"></p>
+        <p class="data__text data__year"></p>
+      </div>
+    </div>
+    <div class="container">
+      <button class="theme__btn" id="dark">Dark theme</button>
+      <div class="clock">
+        <div class="clock__inner">
+          <span class="clock__num clock__num-1">1</span>
+          <span class="clock__num clock__num-2">2</span>
+          <span class="clock__num clock__num-3">3</span>
+          <span class="clock__num clock__num-4">4</span>
+          <span class="clock__num clock__num-5">5</span>
+          <span class="clock__num clock__num-6">6</span>
+          <span class="clock__num clock__num-7">7</span>
+          <span class="clock__num clock__num-8">8</span>
+          <span class="clock__num clock__num-9">9</span>
+          <span class="clock__num clock__num-10">10</span>
+          <span class="clock__num clock__num-11">11</span>
+          <span class="clock__num clock__num-12">12</span>
+          <div class="clock__arrow clock__sec"></div>
+          <div class="clock__arrow clock__min"></div>
+          <div class="clock__arrow clock__hour"></div>
+        </div>
+      </div>
+      <div class="digital">
+        <div class="digital__inner">
+          <div class="digital__around">
+            <svg class="digital__svg" width="140" height="140">
+              <g class="digital__position">
+                <circle
+                  class="digital__circle digital__circle__hour"
+                  r="50"
+                  cx="55"
+                  cy="55"
+                  fill="transparent"
+                  stroke="wheat"
+                  stroke-width="8"
+                  stroke-dasharray="314 314"
+                />
+              </g>
+            </svg>
+            <span class="digital__count digital__hour"></span>
+          </div>
+          <div class="digital__around">
+            <svg class="digital__svg" width="140" height="140">
+              <g class="digital__position">
+                <circle
+                  class="digital__circle digital__circle__min"
+                  r="50"
+                  cx="55"
+                  cy="55"
+                  fill="transparent"
+                  stroke="wheat"
+                  stroke-width="8"
+                  stroke-dasharray="314 314"
+                />
+              </g>
+            </svg>
+            <span class="digital__count digital__min"></span>
+          </div>
+          <div class="digital__around">
+            <svg class="digital__svg" width="140" height="140">
+              <g class="digital__position">
+                <circle
+                  class="digital__circle digital__circle__sec"
+                  r="50"
+                  cx="55"
+                  cy="55"
+                  fill="transparent"
+                  stroke="wheat"
+                  stroke-width="8"
+                  stroke-dasharray="314 314"
+                />
+              </g>
+            </svg>
+            <span class="digital__count digital__sec"></span>
+          </div>
+        </div>
+      </div>
+
+      <audio class="music" src="../js-clock/assets/audio/track1.mp3"></audio>
+      <div class="audio">
+        <div class="audio__inner">
+          <div class="audio__progress"><div class="audio__time"></div></div>
+          <div class="audio__btn">
+            <button class="audio__play"></button>
+            <button class="audio__pause"></button>
+            <button class="audio__prev"></button>
+            <button class="audio__next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

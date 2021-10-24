@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/ico"
+      href="../Custom-Video-Player/assets/img/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="theme">
+    <div class="preload">
+      <div class="loader"></div>
+    </div>
+    <button class="btn__faq" onmousedown="return false"></button>
+    <div class="key">
+      <div class="key__inner key__hidden">
+        <span class="key__close"></span>
+        <ul class="key__inner__items">
+          <li class="key__inner__list">Клавиша <span>Пробел</span> — пауза/воспроизведение</li>
+          <li class="key__inner__list">
+            Клавиша <span>M</span> (англ) — отключение/включение звука
+          </li>
+          <li class="key__inner__list">
+            Клавиша <span>></span> — ускорение воспроизведения ролика
+          </li>
+          <li class="key__inner__list">
+            Клавиша <span>&lt;</span> — замедление воспроизведения ролика
+          </li>
+          <li class="key__inner__list">
+            Клавиша <span>F</span> — включение/выключение полноэкранного режима
+          </li>
+          <li class="key__inner__list">
+            Клавиша <span>K</span> (англ) — приостановить или продолжить
+            воспроизведение
+          </li>
+          <li class="key__inner__list">
+            Клавиша <span>P</span> (англ) - перейти к предыдущему видео
+          </li>
+          <li class="key__inner__list">
+            Клавиша <span>N</span> - перейти к следующему видео
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="video">
+        <span class="video__speed"></span>
+        <button class="video__btn__play" type="button"></button>
+        <video
+          class="video__inner"
+          width="900"
+          height="505"
+          poster="./assets/img/poster0.jpg"
+        >
+          <source
+            src="./assets/video/video0.mp4"
+            id="video__src"
+            type="video/mp4"
+          />
+        </video>
+        <img
+          class="video__arrow video__arrow-left"
+          src="./assets/svg/arrow-left.svg"
+          alt="arrow-left"
+        />
+        <img
+          class="video__arrow video__arrow-right"
+          src="./assets/svg/arrow-right.svg"
+          alt="arrow-left"
+        />
+        <div class="video__control__panel">
+          <div class="video__control__position">
+            <button
+              class="video__btn__left video__position"
+              type="button"
+              onmousedown="return false"
+            ></button>
+            <button
+              class="video__btn__mid video__position"
+              type="button"
+            ></button>
+            <img
+              class="video__btn__img"
+              src="./assets/svg/pause.svg"
+              alt="play"
+            />
+            <button
+              class="video__btn__right video__position"
+              type="button"
+              onmousedown="return false"
+            ></button>
+            <input
+              class="video__line video__line-2"
+              type="range"
+              value="35"
+              min="0"
+              max="100"
+              step="1"
+            />
+            <button
+              class="video__btn__volume video__position"
+              type="button"
+            ></button>
+            <button
+              class="video__btn__volume__off video__position"
+              type="button"
+            ></button>
+            <input
+              class="video__volume"
+              type="range"
+              value="37"
+              min="0"
+              max="100"
+              step="1"
+            />
+            <button
+              class="video__btn__window video__position"
+              type="button"
+            ></button>
+            <span class="video__text-1">10s</span>
+            <span class="video__text-2">15s</span>
+            <button
+              class="video__btn__prev"
+              data-skip="-10"
+              onmousedown="return false"
+            ></button>
+            <button
+              class="video__btn__next"
+              data-skip="15"
+              onmousedown="return false"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
