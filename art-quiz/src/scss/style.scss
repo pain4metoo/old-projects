@@ -400,6 +400,11 @@ body {
       text-align: center;
       max-width: 5rem;
       width: 100%;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
     }
     &__btn__block {
       display: flex;
@@ -653,6 +658,268 @@ body {
       display: none;
     }
   }
+  .game {
+    &__inner__artist {
+      max-width: 85rem;
+      margin: 0 auto;
+    }
+    &__timer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__time__line {
+      background: #a4a4a4;
+      width: 100%;
+      border-radius: 0.5rem;
+      height: 0.5rem;
+      transition: all 0.5s;
+    }
+    &__timer__close {
+      width: 1.4rem;
+      height: 1.4rem;
+      object-fit: cover;
+      margin: 2rem;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+    &__timer__progres {
+      background: $color-bg;
+      height: 0.5rem;
+      transition: all 0.5s;
+      width: 0%;
+      border-radius: 0.5rem;
+    }
+    &__timer__time {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      color: $color-text-set;
+      font-weight: 700;
+      margin: 2rem;
+    }
+    &__dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    &__dot {
+      background: $color-text-set;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      user-select: none;
+      outline: none;
+      margin-right: 1rem;
+    }
+    &__question__text {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      color: $color-text-set;
+      font-weight: 700;
+      text-align: center;
+    }
+    &__window {
+      background-image: url("https://raw.githubusercontent.com/pain4metoo/image-data/master/full/0full.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-width: 28rem;
+      height: 29rem;
+      object-fit: cover;
+      margin: 2rem;
+      margin-bottom: 3rem;
+      border-radius: 1.5rem;
+      transition: all 0.5s;
+    }
+    &__buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    &__btn {
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+      text-align: center;
+      max-width: 40rem;
+      width: 100%;
+      min-height: 5rem;
+      color: $color-text-set;
+      background: $color-bg-main;
+      border: 1px solid $color-text-set;
+      outline: none;
+      user-select: none;
+      border-radius: 1.5rem;
+      transition: all 0.5s;
+      cursor: pointer;
+      &:hover {
+        background: $color-bg;
+        color: $color-bg-main;
+      }
+      &:active {
+        background: $color-bg;
+        color: $color-bg-main;
+      }
+    }
+    &__question__picture {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      color: #ffffff;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    &__window__picture {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      min-width: 28rem;
+      height: 29rem;
+      object-fit: cover;
+      margin: 2rem;
+      margin-bottom: 8rem;
+      transition: all 0.5s;
+    }
+    &__window__item {
+      background-image: url("https://raw.githubusercontent.com/pain4metoo/image-data/master/full/0full.jpg");
+      max-width: 40rem;
+      width: 100%;
+      min-height: 16rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 1.5rem;
+    }
+    &__dots__picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    &__dot__picture {
+      background: $color-text-set;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      user-select: none;
+      outline: none;
+      margin-right: 1rem;
+    }
+  }
+  .popup {
+    &__win {
+      position: fixed;
+      min-width: 30rem;
+      width: 100%;
+      max-width: 50rem;
+      min-height: 20rem;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      background: $color-text-set;
+      animation: 0.5s fade;
+      &__inner {
+        padding: 2rem;
+      }
+      &__img {
+        background-image: url(../assets/image/bg-welcome-1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 50rem;
+        min-height: 30rem;
+      }
+      &__true {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background-image: url(../assets/image/true-answer.png);
+          width: 3rem;
+          height: 3rem;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          bottom: 2rem;
+          left: 2rem;
+        }
+      }
+      &__false {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url(../assets/image/false-answer.png);
+          width: 3rem;
+          height: 3rem;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          bottom: 2rem;
+          left: 2rem;
+        }
+      }
+      &__picture {
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+        color: $color-bg-main;
+        text-align: center;
+        margin: 0;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+      }
+      &__artist {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        text-align: center;
+        font-weight: 400;
+        color: $color-bg-main;
+        margin: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      &__btn {
+        min-width: 30rem;
+        max-width: 40rem;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        color: $color-bg-main;
+        text-align: center;
+        outline: $color-bg-main;
+        user-select: none;
+        min-height: 5rem;
+        background: $color-bg;
+        border: 1px solid #ffffff;
+        border-radius: 2rem;
+        cursor: pointer;
+        position: relative;
+        transform: translate(-50%);
+        left: 50%;
+        margin-bottom: 2rem;
+        transition: all 0.5s;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          border-radius: 2rem;
+          height: 5rem;
+          background: rgba($color-text, 0.5);
+          transition: all 1.5s ease;
+        }
+        &:active {
+          background: rgba($color-text, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.popup__win__btn:hover.popup__win__btn::before {
+  width: 100%;
 }
 
 #home:hover,

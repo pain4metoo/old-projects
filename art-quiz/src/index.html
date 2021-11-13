@@ -25,8 +25,10 @@
               src="./assets/image/logo.png"
               alt="logo"
             />
-            <button class="welcome__artist" type="button">Artist quiz</button>
-            <button class="welcome__pictures" type="button">
+            <button class="welcome__artist" type="button" data-set="artist">
+              Artist quiz
+            </button>
+            <button class="welcome__pictures" type="button" data-set="pictures">
               Pictures quiz
             </button>
           </div>
@@ -165,6 +167,7 @@
                 class="category__img"
                 src="./assets/image/category/portrait.png"
                 alt="image"
+                data-set="1"
               />
             </div>
             <div class="category__item">
@@ -176,6 +179,7 @@
                 class="category__img"
                 src="./assets/image/category/landscape.png"
                 alt="image"
+                data-set="2"
               />
             </div>
             <div class="category__item">
@@ -187,6 +191,7 @@
                 class="category__img"
                 src="./assets/image/category/still-life.png"
                 alt="image"
+                data-set="3"
               />
             </div>
             <div class="category__item">
@@ -198,6 +203,7 @@
                 class="category__img"
                 src="./assets/image/category/impressionism.png"
                 alt="image"
+                data-set="4"
               />
             </div>
             <div class="category__item">
@@ -209,6 +215,7 @@
                 class="category__img"
                 src="./assets/image/category/expressionism.png"
                 alt="image"
+                data-set="5"
               />
             </div>
             <div class="category__item">
@@ -220,6 +227,7 @@
                 class="category__img"
                 src="./assets/image/category/avant-garde.png"
                 alt="image"
+                data-set="6"
               />
             </div>
             <div class="category__item">
@@ -231,6 +239,7 @@
                 class="category__img"
                 src="./assets/image/category/renaissance.png"
                 alt="image"
+                data-set="7"
               />
             </div>
             <div class="category__item">
@@ -242,6 +251,7 @@
                 class="category__img"
                 src="./assets/image/category/surrealism.png"
                 alt="image"
+                data-set="8"
               />
             </div>
             <div class="category__item">
@@ -253,6 +263,7 @@
                 class="category__img"
                 src="./assets/image/category/kitsch.png"
                 alt="image"
+                data-set="9"
               />
             </div>
             <div class="category__item">
@@ -264,6 +275,7 @@
                 class="category__img"
                 src="./assets/image/category/minimalism.png"
                 alt="image"
+                data-set="10"
               />
             </div>
             <div class="category__item">
@@ -275,6 +287,7 @@
                 class="category__img"
                 src="./assets/image/category/interior.png"
                 alt="image"
+                data-set="11"
               />
             </div>
             <div class="category__item">
@@ -286,6 +299,7 @@
                 class="category__img"
                 src="./assets/image/category/nude.png"
                 alt="image"
+                data-set="12"
               />
             </div>
           </div>
@@ -299,7 +313,81 @@
         </nav>
       </section>
       <section class="score hide is-hide"></section>
-      <section class="game hide is-hide"></section>
+      <section class="game hide is-hide">
+        <div class="game__inner__artist hide is-hide">
+          <div class="game__timer">
+            <img
+              class="game__timer__close"
+              src="./assets/svg/close.svg"
+              alt="close"
+            />
+            <div class="game__time__line">
+              <div class="game__timer__progres"></div>
+            </div>
+            <span class="game__timer__time">3:49</span>
+          </div>
+          <p class="game__question__text">Who is the author of this picture?</p>
+          <div class="game__window"></div>
+          <div class="game__dots">
+            <span class="game__dot" id="dot-1"></span>
+            <span class="game__dot" id="dot-2"></span>
+            <span class="game__dot" id="dot-3"></span>
+            <span class="game__dot" id="dot-4"></span>
+            <span class="game__dot" id="dot-5"></span>
+            <span class="game__dot" id="dot-6"></span>
+            <span class="game__dot" id="dot-7"></span>
+            <span class="game__dot" id="dot-8"></span>
+            <span class="game__dot" id="dot-9"></span>
+            <span class="game__dot" id="dot-10"></span>
+          </div>
+          <div class="game__buttons">
+            <button class="game__btn" type="button" id="btn-1"></button
+            ><button class="game__btn" type="button" id="btn-2"></button
+            ><button class="game__btn" type="button" id="btn-3"></button
+            ><button class="game__btn" type="button" id="btn-4"></button>
+          </div>
+        </div>
+        <div class="game__inner__pictures hide is-hide">
+          <div class="game__timer">
+            <img
+              class="game__timer__close game__timer__close-1"
+              src="./assets/svg/close.svg"
+              alt="close"
+            />
+            <div class="game__time__line">
+              <div class="game__timer__progres"></div>
+            </div>
+            <span class="game__timer__time">3:49</span>
+          </div>
+          <p class="game__question__picture">Which is Edvard Munch picture?</p>
+          <div class="game__window__picture">
+            <div class="game__window__item" id="picture-1"></div>
+            <div class="game__window__item" id="picture-2"></div>
+            <div class="game__window__item" id="picture-3"></div>
+            <div class="game__window__item" id="picture-4"></div>
+          </div>
+          <div class="game__dots__picture">
+            <span class="game__dot__picture" id="pic-dot-1"></span>
+            <span class="game__dot__picture" id="pic-dot-2"></span>
+            <span class="game__dot__picture" id="pic-dot-3"></span>
+            <span class="game__dot__picture" id="pic-dot-4"></span>
+            <span class="game__dot__picture" id="pic-dot-5"></span>
+            <span class="game__dot__picture" id="pic-dot-6"></span>
+            <span class="game__dot__picture" id="pic-dot-7"></span>
+            <span class="game__dot__picture" id="pic-dot-8"></span>
+            <span class="game__dot__picture" id="pic-dot-9"></span>
+            <span class="game__dot__picture" id="pic-dot-10"></span>
+          </div>
+        </div>
+      </section>
+      <div class="popup__win hide">
+        <div class="popup__win__inner">
+          <div class="popup__win__img popup__win__true popup__win__false"></div>
+          <h4 class="popup__win__picture">Girl with a Pearl Earring</h4>
+          <h5 class="popup__win__artist">Johannes Vermeer, 1665</h5>
+          <button class="popup__win__btn" type="button">Next</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
