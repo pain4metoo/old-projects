@@ -195,6 +195,7 @@ const accordion = document
 function openMenu() {
   leftSide.classList.toggle("leftside__close");
   document.querySelector(".menu").classList.toggle("active-y");
+  leftSide.appendChild(div);
 }
 
 function openAccordion() {
@@ -203,41 +204,6 @@ function openAccordion() {
     .classList.toggle("leftside__hobbies__close");
   document.querySelector(".leftside__btn").classList.toggle("active-z");
 }
-
-const changeLogo = document.querySelector(".header__logo");
-const changeAvatar = document.getElementById("avatar");
-const light = document.getElementById("light");
-const instagram = document.getElementById("instagram");
-const linkedIn = document.getElementById("linkedIn");
-const gmail = document.getElementById("gmail");
-const telegram = document.getElementById("telegram");
-const youtube = document.getElementById("youtube");
-
-light.onclick = function () {
-  let theme = document.getElementById("Light-Theme");
-  if (theme.getAttribute("href") === "css/style.css") {
-    light.classList.add("change");
-    theme.href = "css/light.css";
-    changeLogo.src = "./assets/image/header-logo-1.png";
-    changeAvatar.src = "./assets/image/avatar-change.png";
-
-    instagram.src = "./assets/image/society/instagram.svg";
-    linkedIn.src = "./assets/image/society/linkedin.svg";
-    gmail.src = "./assets/image/society/gmail.svg";
-    telegram.src = "./assets/image/society/whatsapp.svg";
-    youtube.src = "./assets/image/society/youtube.svg";
-  } else if (theme.getAttribute("href") === "css/light.css") {
-    light.classList.remove("change");
-    theme.href = "css/style.css";
-    changeLogo.src = "./assets/image/header-logo.png";
-    changeAvatar.src = "./assets/image/avatar.png";
-    instagram.src = "./assets/svg/instagramm.svg";
-    linkedIn.src = "./assets/svg/linked.svg";
-    gmail.src = "./assets/svg/gmail.svg";
-    telegram.src = "./assets/svg/telegram.svg";
-    youtube.src = "./assets/svg/youtube.svg";
-  }
-};
 
 let scrollItems = document.querySelectorAll(".ani");
 
@@ -275,4 +241,3 @@ if (scrollItems.length > 0) {
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
   }
 }
-

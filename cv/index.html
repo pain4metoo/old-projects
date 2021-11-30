@@ -27,10 +27,6 @@
       <div class="loader"></div>
     </div>
     <header class="header">
-      <div class="menu">
-        <div class="menu__inner"></div>
-      </div>
-
       <div class="leftside leftside__close">
         <div class="leftside__inner">
           <a
@@ -74,79 +70,38 @@
           </div>
         </div>
       </div>
-      <div class="theme__block">
-        <div class="theme__btn" id="light"></div>
+      <div class="menu">
+        <div class="menu__inner"></div>
       </div>
+      <div class="header__inner">
+        <nav class="header__menu">
+          <ul class="header__menu__inner">
+            <li class="header__menu__item">
+              <a class="header__menu__link" href="#project-x">Projects</a>
+            </li>
+            <li class="header__menu__item">
+              <a class="header__menu__link" href="#skills-x">Skills</a>
+            </li>
+            <li class="header__menu__item">
+              <a class="header__menu__link" href="#contacts-x">Contacts</a>
+            </li>
+            <li class="header__menu__item">
+              <a class="header__menu__link" href="#skills-x">Education</a>
+            </li>
+            <li class="header__menu__item">
+              <a class="header__menu__link" href="#code-x">Code</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <main class="main">
       <div class="container">
         <div class="header__info">
-          <div class="header__social">
-            <ul class="header__social__inner">
-              <li class="header__social__item">
-                <a
-                  class="header__social__link"
-                  target="blank"
-                  href="https://www.instagram.com/pain4metoo/"
-                  ><img
-                    class="header__social__img"
-                    src="./assets/svg/instagramm.svg"
-                    alt="instagram"
-                    id="instagram"
-                /></a>
-              </li>
-              <li class="header__social__item">
-                <a
-                  class="header__social__link"
-                  target="blank"
-                  href="https://www.linkedin.com/in/pain4metoo"
-                  ><img
-                    class="header__social__img"
-                    src="./assets/svg/linked.svg"
-                    alt="linkedIn"
-                    id="linkedIn"
-                /></a>
-              </li>
-              <li class="header__social__item">
-                <a
-                  class="header__social__link"
-                  href="mailto:pain4metoo@gmail.com"
-                  ><img
-                    class="header__social__img"
-                    src="./assets/svg/gmail.svg"
-                    alt="gmail"
-                    id="gmail"
-                /></a>
-              </li>
-              <li class="header__social__item">
-                <a
-                  class="header__social__link"
-                  target="blank"
-                  href="https://wa.me/375297340883"
-                  ><img
-                    class="header__social__img"
-                    src="./assets/svg/telegram.svg"
-                    alt="telegram"
-                    id="telegram"
-                /></a>
-              </li>
-              <li class="header__social__item">
-                <a
-                  class="header__social__link"
-                  target="blank"
-                  href="https://www.youtube.com/watch?v=veqpFN4b6hI&t=6s"
-                  ><img
-                    class="header__social__img"
-                    src="./assets/svg/youtube.svg"
-                    alt="youtube"
-                    id="youtube"
-                /></a>
-              </li>
-            </ul>
-          </div>
-
           <div class="header__info__left">
-            <h1 class="header__info__title">Evgeny Kachanov</h1>
-            <h2 class="header__info__title-2">Front End developer</h2>
+            <h1 class="header__info__title">Hi, I'm <span class="header__info__color">Evgeny</span></h1>
+            <h2 class="header__info__title-2">Front-End Developer</h2>
             <p class="header__info__text">
               I'm an aspiring Front End developer with a desire to develop my
               skills in this field. I want to realize myself in IT sphere. My
@@ -172,39 +127,9 @@
               alt="image"
               id="avatar"
             />
-            <img
-              class="header__info__img header__img__media"
-              src="./assets/image/avatar-media.jpg"
-              alt="image"
-            />
           </div>
         </div>
 
-        <div class="header__inner">
-          <nav class="header__menu">
-            <ul class="header__menu__inner">
-              <li class="header__menu__item">
-                <a class="header__menu__link" href="#project-x">Projects</a>
-              </li>
-              <li class="header__menu__item">
-                <a class="header__menu__link" href="#skills-x">Skills</a>
-              </li>
-              <li class="header__menu__item">
-                <img
-                  class="header__logo"
-                  src="./assets/image/header-logo.png"
-                  alt="logo"
-                />
-              </li>
-              <li class="header__menu__item">
-                <a class="header__menu__link" href="#skills-x">Education</a>
-              </li>
-              <li class="header__menu__item">
-                <a class="header__menu__link" href="#code-x">Code</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
         <div class="about__inner">
           <div class="about__inner__left">
             <h2 class="about__title">Personal</h2>
@@ -234,11 +159,6 @@
             ></iframe>
           </div>
         </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="container">
         <section class="project" id="project-x">
           <div class="project__inner">
             <h4 class="project__title">Projects</h4>
@@ -250,7 +170,111 @@
                     <div class="project__slide__inner__position">
                       <div class="project__slide__description__block">
                         <h5 class="project__slide__description__title">
-                        Landing Page (Louvre)
+                          SPA App (Art-quiz)
+                        </h5>
+                        <p class="project__slide__text">
+                          ArtQuiz is a quiz application on the knowledge of
+                          painting masterpieces and their authors. You guess the
+                          authors of the paintings, the progress of the game is
+                          saved when you exit, the application has settings
+                          (language, sound, play against time). During the
+                          development, the mobile first approach was used.
+                        </p>
+                      </div>
+                      <div class="project__slide__stack__block">
+                        <h5 class="project__slide__stack__title">
+                          stack & instruments
+                        </h5>
+                        <ul class="project__slide__stack__items">
+                          <li class="project__slide__stack__item">
+                            <a
+                              class="
+                                project__slide__stack__link
+                                project__slide__stack__item-1
+                              "
+                              target="blank"
+                              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                              >HTML</a
+                            >
+                          </li>
+                          <li class="project__slide__stack__item">
+                            <a
+                              class="
+                                project__slide__stack__link
+                                project__slide__stack__item-2
+                              "
+                              target="blank"
+                              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                              >CSS</a
+                            >
+                          </li>
+                          <li class="project__slide__stack__item">
+                            <a
+                              class="
+                                project__slide__stack__link
+                                project__slide__stack__item-3
+                              "
+                              target="blank"
+                              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                              >Javascript</a
+                            >
+                          </li>
+                          <li class="project__slide__stack__item">
+                            <a
+                              class="
+                                project__slide__stack__link
+                                project__slide__stack__item-4
+                              "
+                              target="blank"
+                              href="https://sass-lang.com/"
+                              >SCSS</a
+                            >
+                          </li>
+                          <li class="project__slide__stack__item">
+                            <a
+                              class="
+                                project__slide__stack__link
+                                project__slide__stack__item-5
+                              "
+                              target="blank"
+                              href="https://github.com/"
+                              >Git</a
+                            >
+                          </li>
+                          <li class="project__slide__stack__item">
+                            <a
+                              class="
+                                project__slide__stack__link
+                                project__slide__stack__item-6
+                              "
+                              target="blank"
+                              href="https://code.visualstudio.com/"
+                              >Visual studio code</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a
+                      class="project__slide__link"
+                      target="blank"
+                      href="https://pain4metoo.github.io/myProjects/art-quiz/"
+                    >
+                      <img
+                        class="project__slide__img"
+                        src="./assets/image/projects/2.jpg"
+                        alt="slider-img-2"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="project__slide">
+                  <div class="project__slide__inner">
+                    <div class="project__slide__inner__position">
+                      <div class="project__slide__description__block">
+                        <h5 class="project__slide__description__title">
+                          Landing Page (Louvre)
                         </h5>
                         <p class="project__slide__text">
                           Excursion to the Louvre, on this landing you will find
@@ -436,7 +460,7 @@
                     <div class="project__slide__inner__position">
                       <div class="project__slide__description__block">
                         <h5 class="project__slide__description__title">
-                        SPA App (js-clock)
+                          SPA App (js-clock)
                         </h5>
                         <p class="project__slide__text">
                           JS clock web application. Show the exact time, date.
@@ -528,109 +552,6 @@
                         class="project__slide__img"
                         src="./assets/image/projects/3.jpg"
                         alt="slider-img-1"
-                      />
-                    </a>
-                  </div>
-                </div>
-
-                <div class="project__slide">
-                  <div class="project__slide__inner">
-                    <div class="project__slide__inner__position">
-                      <div class="project__slide__description__block">
-                        <h5 class="project__slide__description__title">
-                          SPA App (video player)
-                        </h5>
-                        <p class="project__slide__text">
-                          Web application video player in JS. A custom video
-                          player can be added to the page of the application,
-                          game, website, will give them uniqueness and
-                          originality, and arrange them in accordance with the
-                          intention of the author of the project.
-                        </p>
-                      </div>
-                      <div class="project__slide__stack__block">
-                        <h5 class="project__slide__stack__title">
-                          stack & instruments
-                        </h5>
-                        <ul class="project__slide__stack__items">
-                          <li class="project__slide__stack__item">
-                            <a
-                              class="
-                                project__slide__stack__link
-                                project__slide__stack__item-1
-                              "
-                              target="blank"
-                              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                              >HTML</a
-                            >
-                          </li>
-                          <li class="project__slide__stack__item">
-                            <a
-                              class="
-                                project__slide__stack__link
-                                project__slide__stack__item-2
-                              "
-                              target="blank"
-                              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                              >CSS</a
-                            >
-                          </li>
-                          <li class="project__slide__stack__item">
-                            <a
-                              class="
-                                project__slide__stack__link
-                                project__slide__stack__item-3
-                              "
-                              target="blank"
-                              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                              >Javascript</a
-                            >
-                          </li>
-                          <li class="project__slide__stack__item">
-                            <a
-                              class="
-                                project__slide__stack__link
-                                project__slide__stack__item-4
-                              "
-                              target="blank"
-                              href="https://sass-lang.com/"
-                              >SCSS</a
-                            >
-                          </li>
-                          <li class="project__slide__stack__item">
-                            <a
-                              class="
-                                project__slide__stack__link
-                                project__slide__stack__item-5
-                              "
-                              target="blank"
-                              href="https://github.com/"
-                              >Git</a
-                            >
-                          </li>
-                          <li class="project__slide__stack__item">
-                            <a
-                              class="
-                                project__slide__stack__link
-                                project__slide__stack__item-6
-                              "
-                              target="blank"
-                              href="https://code.visualstudio.com/"
-                              >Visual studio code</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <a
-                      class="project__slide__link"
-                      target="blank"
-                      href="https://rolling-scopes-school.github.io/pain4metoo-JSFEPRESCHOOL/Custom-Video-Player/"
-                    >
-                      <img
-                        class="project__slide__img"
-                        src="./assets/image/projects/2.jpg"
-                        alt="slider-img-2"
                       />
                     </a>
                   </div>
@@ -847,64 +768,80 @@
             <div class="code__inner__js">
               <h4 class="code__title">Code example</h4>
 
-              <pre><code class="code__js">function revrot(str, sz) {
+              <pre><code class="code__js">
+  function getRandom(num) {
+  let number = num;
+  let randomCount = Math.floor(Math.random() * number);
 
-  let newArr = [];
-  let arrBox = str.split('');
-  let boxWithSum = [];
-  let sumOfCubes = 0;
-              
-  if (sz &lt;= 0 || str === null || sz > str.length) {
-      return '';
-  }      
-
-  const count = Math.round(str.length / sz); 
-
-  for (let i = 0; i &lt; count; i++) {
-      newArr.push(new Array());
-      for (let j = 0; j &lt; sz; j++) {
-        newArr[i].push(arrBox.shift());
-        sumOfCubes += Math.pow(newArr[i][j], 3);
-        if (j === sz - 1) {
-          boxWithSum.push(sumOfCubes);
-          sumOfCubes = 0;
-          if (boxWithSum[i] % 2 === 0) {
-            newArr[i].reverse();
-          }
-          if (boxWithSum[i] % 2 !== 0) {
-            newArr[i].push(newArr[i].splice(0, 1).toString());
-          }
-          if (newArr[i].indexOf(undefined) !== -1) {
-            newArr.splice(i, 1);
-         }
-       }
-     }
-   }
-  return newArr.join('').replace(/,/gi, '');
-}</code></pre>
+  if (!randomNumbers.includes(randomCount)) {
+    randomNumbers.push(randomCount);
+  } else {
+    getRandom(number);
+  }
+  return randomNumbers.shift();
+}
+</code></pre>
             </div>
-            <div class="code__inner__task">
-              <h4 class="code__inner__task__title">Task</h4>
-              <p class="code__task__text">
-                The input is a string str of digits. Cut the string into chunks
-                (a chunk here is a substring of the initial string) of size sz
-                (ignore the last chunk if its size is less than sz). If a chunk
-                represents an integer such as the sum of the cubes of its digits
-                is divisible by 2, reverse that chunk; otherwise rotate it to
-                the left by one position. Put together these modified chunks and
-                return the result as a string. If sz is &lt;= 0 or if str is
-                empty return ' ' sz is greater (>) than the length of str it is
-                impossible to take a chunk of size sz hence return ' '.
-                <span>Examples:</span>
-                revrot("664438769", 8) --> '67834466'<br />
-                revrot('123456779', 8) --> '23456771'
-              </p>
+            <div class="header__social" id="contacts-x">
+              <h4 class="code__title">Contacts</h4>
+              <ul class="header__social__inner">
+                <li class="header__social__item">
+                  <a
+                    class="header__social__link"
+                    target="blank"
+                    href="https://www.instagram.com/pain4metoo/"
+                    ><img
+                      class="header__social__img"
+                      src="./assets/image/society/instagram.png"
+                      alt="instagram"
+                      id="instagram"
+                  /></a>
+                </li>
+                <li class="header__social__item">
+                  <a
+                    class="header__social__link"
+                    target="blank"
+                    href="https://www.linkedin.com/in/pain4metoo"
+                    ><img
+                      class="header__social__img"
+                      src="./assets/image/society/linkedin.png"
+                      alt="linkedIn"
+                      id="linkedIn"
+                  /></a>
+                </li>
+                <li class="header__social__item">
+                  <a
+                    class="header__social__link"
+                    href="mailto:pain4metoo@gmail.com"
+                    ><img
+                      class="header__social__img"
+                      src="./assets/image/society/gmail.png"
+                      alt="gmail"
+                      id="gmail"
+                  /></a>
+                </li>
+                <li class="header__social__item">
+                  <a
+                    class="header__social__link"
+                    target="blank"
+                    href="https://wa.me/375297340883"
+                    ><img
+                      class="header__social__img"
+                      src="./assets/image/society/whatsapp.png"
+                      alt="telegram"
+                      id="telegram"
+                  /></a>
+                </li>
+              </ul>
             </div>
           </div>
-
           <div class="footer__content">
             <div class="footer__content__inner">
-              <a class="footer__logo" target="blank" href="https://github.com/pain4metoo">
+              <a
+                class="footer__logo"
+                target="blank"
+                href="https://github.com/pain4metoo"
+              >
                 pain4metoo
               </a>
               <p class="footer__year">2021</p>
