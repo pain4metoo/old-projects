@@ -1363,11 +1363,21 @@ main {
     text-align: center;
   }
   .welcome__name__value {
-    font-size: 2.7rem;
+    font-size: 4rem;
     text-align: center;
+    width: 100%;
+    margin-top: 2rem;
   }
   .welcome__hi {
     margin-right: 0;
+  }
+  .footer__info{
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .footer__author {
+    padding-bottom: 2rem;
   }
 }
 
@@ -1393,14 +1403,13 @@ main {
 
 @media (max-width: 390px) {
   .welcome__hi {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 4rem;
   }
   .welcome__name__value {
-    font-size: 2rem;
-    width: 100%;
+    font-size: 3rem;
     text-align: center;
-    line-height: 4rem;
+    line-height: 2rem;
   }
   .header__player {
     margin-left: 0;
@@ -1418,5 +1427,11 @@ main {
   }
   .footer__author {
     font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+  .footer__info{
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
