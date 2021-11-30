@@ -3,7 +3,6 @@ import { settings } from "./settings.js";
 import { checkItems } from "./settings.js";
 const body = document.querySelector(".body");
 export let randomNumber = Math.round(Math.random() * 20);
-let url = `url('https://raw.githubusercontent.com/pain4metoo/stage1-tasks/assets/images/`;
 let currentTime;
 
 let btnLeft = document.querySelector(".left");
@@ -49,14 +48,24 @@ export function changeUrl() {
     }
   }
 
+  const img = new Image();
+
   if (checkItems.includes("api-1")) {
     if (randomNumber === 0) {
       randomNumber = 1;
     }
     if (randomNumber < 10) {
-      body.style.backgroundImage = `${url}${currentTime}/0${randomNumber}.jpg`;
+      img.src = `https://raw.githubusercontent.com/pain4metoo/stage1-tasks/assets/images/${currentTime}/0${randomNumber}.jpg`;
+
+      img.onload = () => {
+        body.style.backgroundImage = `url('${img.src}')`;
+      };
     } else {
-      body.style.backgroundImage = `${url}${currentTime}/${randomNumber}.jpg`;
+      img.src = `https://raw.githubusercontent.com/pain4metoo/stage1-tasks/assets/images/${currentTime}/${randomNumber}.jpg`;
+
+      img.onload = () => {
+        body.style.backgroundImage = `url('${img.src}')`;
+      };
     }
   }
   if (checkItems.includes("api-2")) {
@@ -78,17 +87,32 @@ export function changeUrl() {
 
 function prevImage() {
   randomNumber--;
+
+  const img = new Image();
+
   if (checkItems.includes("api-1")) {
     if (randomNumber === 0) {
       randomNumber = 20;
 
-      body.style.backgroundImage = `${url}${currentTime}/20.jpg`;
+      img.src = `https://raw.githubusercontent.com/pain4metoo/stage1-tasks/assets/images/${currentTime}/20.jpg`;
+
+      img.onload = () => {
+        body.style.backgroundImage = `url('${img.src}')`;
+      };
     } else {
       if (randomNumber < 10) {
-        body.style.backgroundImage = `${url}${currentTime}/0${randomNumber}.jpg`;
+        img.src = `https://raw.githubusercontent.com/pain4metoo/stage1-tasks/assets/images/${currentTime}/0${randomNumber}.jpg`;
+
+        img.onload = () => {
+          body.style.backgroundImage = `url('${img.src}')`;
+        };
       }
       if (randomNumber >= 10) {
-        body.style.backgroundImage = `${url}${currentTime}/${randomNumber}.jpg`;
+        img.src = `https://raw.githubusercontent.com/pain4metoo/stage1-tasks/assets/images/${currentTime}/${randomNumber}.jpg`;
+
+        img.onload = () => {
+          body.style.backgroundImage = `url('${img.src}')`;
+        };
       }
     }
   }
@@ -105,16 +129,27 @@ function prevImage() {
 
 function nextImage() {
   randomNumber++;
+  const img = new Image();
   if (checkItems.includes("api-1")) {
     if (randomNumber === 21) {
       randomNumber = 1;
-      body.style.backgroundImage = `${url}${currentTime}/01.jpg`;
+
+      img.src = `https://raw.githubusercontent.com/pain4metoo/stage1-tasks/assets/images/${currentTime}/01.jpg`;
+      img.onload = () => {
+        body.style.backgroundImage = `url('${img.src}')`;
+      };
     } else {
       if (randomNumber < 10) {
-        body.style.backgroundImage = `${url}${currentTime}/0${randomNumber}.jpg`;
+        img.src = `https://raw.githubusercontent.com/pain4metoo/stage1-tasks/assets/images/${currentTime}/0${randomNumber}.jpg`;
+        img.onload = () => {
+          body.style.backgroundImage = `url('${img.src}')`;
+        };
       }
       if (randomNumber >= 10) {
-        body.style.backgroundImage = `${url}${currentTime}/${randomNumber}.jpg`;
+        img.src = `https://raw.githubusercontent.com/pain4metoo/stage1-tasks/assets/images/${currentTime}/${randomNumber}.jpg`;
+        img.onload = () => {
+          body.style.backgroundImage = `url('${img.src}')`;
+        };
       }
     }
   }

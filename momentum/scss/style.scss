@@ -1364,6 +1364,7 @@ main {
   }
   .welcome__name__value {
     font-size: 2.7rem;
+    text-align: center;
   }
   .welcome__hi {
     margin-right: 0;
@@ -1384,16 +1385,22 @@ main {
     right: 0;
     top: 5rem;
   }
+  .select__body {
+    position: static;
+    width: 100%;
+  }
 }
 
 @media (max-width: 390px) {
   .welcome__hi {
     font-size: 2rem;
+    line-height: 4rem;
   }
   .welcome__name__value {
     font-size: 2rem;
     width: 100%;
     text-align: center;
+    line-height: 4rem;
   }
   .header__player {
     margin-left: 0;
