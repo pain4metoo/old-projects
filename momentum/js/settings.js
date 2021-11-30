@@ -5,6 +5,8 @@ import { randomNumber } from "./slider.js";
 import { changeUrl } from "./slider.js";
 
 const set = document.querySelector(".settings");
+const checkArr = document.querySelectorAll("input");
+let localSettings = JSON.parse(localStorage.getItem("settings"));
 
 document.querySelector(".settings__open").addEventListener("click", () => {
   set.classList.toggle("settings__active");
@@ -17,6 +19,7 @@ document.querySelectorAll("input").forEach((item) =>
   item.addEventListener("click", () => {
     check();
     settings();
+    getLocalValue();
   })
 );
 
@@ -24,9 +27,39 @@ let musicItems = document.querySelectorAll(".select__item");
 let hideItems = document.querySelectorAll(".settings__text__hide");
 let tagsItems = document.querySelectorAll(".settings__text__tag");
 let typeitems = document.querySelectorAll(".settings__text__type");
-export let checkItems = [];
+export let checkItems = JSON.parse(localStorage.getItem("settings")) || [
+  "lang-1",
+  "api-1",
+];
 
-let getSettings = JSON.parse(localStorage.getItem("settings"));
+window.addEventListener("load", () => {
+  let valueArr = document.querySelectorAll(`.isCheck`);
+  valueArr.forEach((el) => {
+    let checked = JSON.parse(localStorage.getItem(el.id));
+    document.getElementById(el.id).checked = checked;
+  });
+
+  if (localSettings) {
+    for (let i = 0; i < localSettings.length; i++) {
+      checkItems.push(localSettings[i]);
+    }
+  }
+});
+
+checkArr.forEach((item) =>
+  item.addEventListener("change", () => {
+    check();
+    settings();
+    getLocalValue();
+  })
+);
+
+let getLocalValue = function () {
+  let valueArr = document.querySelectorAll(`.isCheck`);
+  valueArr.forEach((el) => {
+    localStorage.setItem(el.id, el.checked);
+  });
+};
 
 let songArrRu = [
   "Сочиняй свою музыку",
@@ -41,6 +74,7 @@ let songArrEn = [
   "I've Been Loving You Too Long",
 ];
 export function settings() {
+  localStorage.setItem("settings", JSON.stringify(checkItems));
   if (checkItems.includes("lang-1")) {
     translateRu();
   }
@@ -292,14 +326,9 @@ export function settings() {
 
 export function check() {
   checkItems = [];
-  let checkArr = document.querySelectorAll("input");
-
   for (let i = 0; i < checkArr.length; i++) {
     if (checkArr[i].checked) {
       checkItems.push(checkArr[i].id);
     }
   }
-  localStorage.setItem("settings", JSON.stringify(checkItems));
 }
-
-check();

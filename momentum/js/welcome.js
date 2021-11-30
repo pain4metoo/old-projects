@@ -147,24 +147,13 @@ firstName.addEventListener("change", welcomeName);
 
 export function welcomeName() {
   let name = firstName.value;
+  if (name !== "") [localStorage.setItem("name", JSON.stringify(name))];
 
-  if (name) {
-    localStorage.setItem("name", JSON.stringify(name));
+  if (name.length <= 8) {
+    document.querySelector(".welcome__name").style.marginLeft = "10rem";
+  } else {
+    document.querySelector(".welcome__name").style.marginLeft = "0rem";
   }
-
-  if (localStorage.name) {
-    const getValue = JSON.parse(localStorage.getItem("name"));
-    firstName.placeholder = getValue;
-  }
-
-  if (localStorage.name) {
-    if (localStorage.name.length <= 8) {
-      document.querySelector(".welcome__name").style.marginLeft = "10rem";
-    } else {
-      document.querySelector(".welcome__name").style.marginLeft = "0rem";
-    }
-  }
-
   document.querySelector(".welcome__hi").classList.toggle("animation__left");
   firstName.classList.toggle("animation__right");
 }
