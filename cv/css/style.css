@@ -525,7 +525,7 @@ main {
 .header__info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 100px;
   position: relative;
 }
@@ -546,6 +546,73 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.header__info__link {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+
+.header__info__right {
+  position: relative;
+}
+
+.header__git {
+  width: 6rem;
+  height: 6rem;
+  border: 10px solid;
+  border-color: rgba(55, 55, 55, 0.5);
+  border-radius: 50%;
+  border-width: 2rem;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.header__git:hover {
+  width: 7.4rem;
+  height: 7.4rem;
+}
+
+.header__lin {
+  width: 6rem;
+  height: 6rem;
+  border: 10px solid;
+  border-color: rgba(65, 105, 225, 0.5);
+  border-radius: 50%;
+  border-width: 2rem;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.header__lin:hover {
+  width: 7.4rem;
+  height: 7.4rem;
+}
+
+.header__info__item {
+  animation-delay: 0.5s;
+  position: absolute;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+.header__info__item-link {
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header__item-git {
+  position: absolute;
+  right: 0;
+  bottom: 5rem;
+  animation-direction: alternate-reverse;
+}
+
+.header__item-lin {
+  left: 0;
+  top: 5rem;
+  border-radius: 10px solid;
 }
 
 .header__menu__inner {
@@ -569,11 +636,15 @@ main {
   color: #d8dfd2;
   text-decoration: none;
   outline: none;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .header__menu__link:hover {
   color: #928585;
+  border-bottom: 0.1rem solid #ff2253;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  animation-delay: all 1s;
 }
 
 .header__info__title {
@@ -608,6 +679,9 @@ main {
   cursor: pointer;
   transition: all 0.5s;
   margin-right: 5rem;
+  border-bottom: 1rem solid #ff2253;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
 }
 
 .header__social {
@@ -645,6 +719,15 @@ main {
 
 .header__link:hover {
   color: #019e86;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
 }
 
 .about {
@@ -1497,6 +1580,9 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: linear-gradient(0deg, #BC1964 0%, #311996 100%);
+    min-height: 15rem;
+    border-radius: 1rem;
   }
   .header__social__img {
     width: 7rem;

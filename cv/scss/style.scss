@@ -316,7 +316,7 @@ main {
   &__info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 100px;
     position: relative;
   }
@@ -336,6 +336,63 @@ main {
       background-repeat: no-repeat;
     }
   }
+  &__info__link {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+  }
+  &__info__right {
+    position: relative;
+  }
+  &__git {
+    width: 6rem;
+    height: 6rem;
+    border: 10px solid;
+    border-color: rgba(#373737, 0.5);
+    border-radius: 50%;
+    border-width: 2rem;
+    transition: all 0.5s;
+    overflow: hidden;
+    &:hover {
+      width: 7.4rem;
+      height: 7.4rem;
+    }
+  }
+  &__lin {
+    width: 6rem;
+    height: 6rem;
+    border: 10px solid;
+    border-color: rgba(#4169e1, 0.5);
+    border-radius: 50%;
+    border-width: 2rem;
+    transition: all 0.5s;
+    overflow: hidden;
+    &:hover {
+      width: 7.4rem;
+      height: 7.4rem;
+    }
+  }
+  &__info__item {
+    animation-delay: 0.5s;
+    position: absolute;
+    animation: float 2s ease-in-out infinite alternate;
+  }
+  &__info__item-link {
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  &__item-git {
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
+    animation-direction: alternate-reverse;
+  }
+  &__item-lin {
+    left: 0;
+    top: 5rem;
+    border-radius: 10px solid;
+  }
   &__menu__inner {
     display: flex;
     justify-content: center;
@@ -354,9 +411,13 @@ main {
     color: rgb(216, 223, 210);
     text-decoration: none;
     outline: none;
-    transition: all 0.5s;
+    transition: all 1s;
     &:hover {
       color: rgb(146, 133, 133);
+      border-bottom: 0.1rem solid #ff2253;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      animation-delay: all 1s;
     }
   }
   &__info__title {
@@ -388,6 +449,9 @@ main {
     cursor: pointer;
     transition: all 0.5s;
     margin-right: 5rem;
+    border-bottom: 1rem solid #ff2253;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
   }
   &__social {
     margin-right: 10rem;
@@ -418,6 +482,16 @@ main {
     &:hover {
       color: #019e86;
     }
+  }
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(8px);
   }
 }
 
@@ -1225,6 +1299,9 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: linear-gradient(0deg, #BC1964 0%, #311996 100%);
+    min-height: 15rem;
+    border-radius: 1rem;
   }
   .header__social__img {
     width: 7rem;
