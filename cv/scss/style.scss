@@ -485,7 +485,6 @@ main {
   }
 }
 
-
 @keyframes float {
   0% {
     transform: translateY(-8px);
@@ -1211,6 +1210,56 @@ iframe {
   width: 50%;
 }
 
+.typescipt {
+  width: 0;
+  opacity: 0;
+  background-color: #ffeecd;
+  height: 2px;
+  position: absolute;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.2s;
+  &::after {
+    content: "Typescipt";
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    line-height: 37px;
+    color: #ffffff;
+    font-weight: 400;
+    position: absolute;
+    top: -35px;
+    left: 0;
+  }
+}
+.typescipt.active {
+  opacity: 1;
+  width: 25%;
+}
+
+.react {
+  width: 0;
+  opacity: 0;
+  background-color: #e3ddfe;
+  height: 2px;
+  position: absolute;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.2s;
+  &::after {
+    content: "React";
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    line-height: 37px;
+    color: #ffffff;
+    font-weight: 400;
+    position: absolute;
+    top: -35px;
+    left: 0;
+  }
+}
+.react.active {
+  opacity: 1;
+  width: 20%;
+}
+
 .code {
   &__inner {
     padding-left: 100px;
@@ -1299,7 +1348,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(0deg, #BC1964 0%, #311996 100%);
+    background: linear-gradient(0deg, #bc1964 0%, #311996 100%);
     min-height: 15rem;
     border-radius: 1rem;
   }
