@@ -1618,7 +1618,7 @@ iframe {
 
 .css.active {
   opacity: 1;
-  width: 80%;
+  width: 90%;
 }
 
 .js {
@@ -1647,7 +1647,7 @@ iframe {
 
 .js.active {
   opacity: 1;
-  width: 45%;
+  width: 77%;
 }
 
 .git {
@@ -1676,7 +1676,7 @@ iframe {
 
 .git.active {
   opacity: 1;
-  width: 50%;
+  width: 69%;
 }
 
 .typescipt {
@@ -1705,7 +1705,7 @@ iframe {
 
 .typescipt.active {
   opacity: 1;
-  width: 25%;
+  width: 40%;
 }
 
 .react {
@@ -1734,7 +1734,7 @@ iframe {
 
 .react.active {
   opacity: 1;
-  width: 20%;
+  width: 50%;
 }
 
 .code__inner {
