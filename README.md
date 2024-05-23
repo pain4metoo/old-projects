@@ -10,7 +10,7 @@
 
 ## [Momentum](https://pain4metoo.github.io/old-projects/momentum/)
 
-## [Online Zoo](https://pain4metoo.github.io/old-projects/online-zoo)
+## [Online Zoo](https://rolling-scopes-school.github.io/pain4metoo-JSFE2022Q3/online-zoo-part3/)
 
 ## [Bird Quiz](https://rolling-scopes-school.github.io/pain4metoo-JSFE2022Q3/songbird/)
 
