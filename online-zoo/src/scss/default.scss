@@ -1,0 +1,52 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./main/header.scss";
+@import "./main/footer.scss";
+@import "./main/main.scss";
+@import "./donate/header.scss";
+@import "./donate/footer.scss";
+@import "./donate/main.scss";
+@import "./responsive_main.scss";
+@import "./response_donate.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-default;
+  font-weight: $fw-regular;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.container {
+  max-width: 118rem;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 998;
+  overflow: hidden;
+  display: none;
+  &_show {
+    display: block;
+  }
+}

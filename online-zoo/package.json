@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "description": "ZOO",
+  "private": true,
+  "name": "online-zoo",
+  "scripts": {
+    "start": "rss-scripts start -ts",
+    "build": "rss-scripts build -ts"
+  },
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "rss-scripts": "^0.2.4"
+  }
+}

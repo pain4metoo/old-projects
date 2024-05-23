@@ -1,0 +1,1134 @@
+@media (max-width: 1500px) {
+  .main {
+    &_slider {
+      &::after {
+        display: none;
+      }
+      &_img {
+        width: 50.5rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .footer {
+    &_left {
+      max-width: 100%;
+      margin: 0;
+    }
+    &_center {
+      position: absolute;
+      max-width: 100%;
+      margin: 0;
+      bottom: 0;
+      transform: translate(-50%, -50%);
+      left: 50%;
+    }
+    &_right {
+      max-width: 100%;
+      margin: 0;
+      margin-left: auto;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .header_nav_item_1 {
+    margin-right: 1rem;
+  }
+  .main {
+    &_comments {
+      &_item {
+        margin-right: 3rem;
+      }
+      &_item:nth-child(4) {
+        display: none;
+        margin-right: 0;
+      }
+      &_items {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    position: relative;
+    z-index: 2;
+    &_inner {
+      padding-left: 2rem;
+    }
+    &_logo_text {
+      padding-left: 0.4rem;
+      padding-right: 0.5rem;
+    }
+    &_nav_item {
+      margin-right: 4.8rem;
+    }
+    &_nav_item_2 {
+      margin-right: 0;
+    }
+    &_nav_item_1 {
+      margin-right: 2rem;
+    }
+  }
+  .main {
+    &_welcome {
+      height: 50.4rem;
+    }
+    &_welcome_title::after {
+      width: 36.7rem;
+      height: 36.7rem;
+      left: -1.8rem;
+      top: -1.2rem;
+    }
+    &_welcome_word {
+      font-size: 8.52rem;
+      line-height: 6.4rem;
+    }
+    &_welcome_btn_link {
+      margin-top: 4.1rem;
+    }
+    &_welcome_title {
+      padding-top: 4rem;
+      margin-right: 1.6rem;
+    }
+    &_slider {
+      margin-top: 10.8rem;
+      &::after {
+        display: none;
+      }
+      &::before {
+        background-image: url("../assets/images/flower_1_1.png");
+        right: -63px;
+        bottom: -87px;
+      }
+      &_inner {
+        margin-left: 2rem;
+        grid-gap: 1rem;
+        margin-bottom: 0;
+      }
+      &_item {
+        max-width: 29.4rem;
+        min-height: 35.4rem;
+        margin-bottom: 9.2rem;
+        z-index: 1;
+        &_1 {
+          order: 1;
+        }
+        &_2 {
+          order: 2;
+        }
+        &_3 {
+          order: 4;
+          margin-top: -1rem;
+        }
+        &_4 {
+          order: 4;
+        }
+        &_5 {
+          margin-top: 0;
+          order: 3;
+          &:nth-of-type(5) {
+            margin-top: 0;
+          }
+        }
+        &_6 {
+          margin-top: -1rem;
+          order: 6;
+        }
+        &_7 {
+          display: block;
+          order: 5;
+        }
+      }
+      &_item_img {
+        position: relative;
+        height: 29.5rem;
+        object-fit: cover;
+      }
+      &_left {
+        left: 36.9%;
+        top: 44.6%;
+      }
+      &_right {
+        right: 32.4%;
+        top: 44.6%;
+      }
+      &_info {
+        justify-content: normal;
+        margin-bottom: 14.4rem;
+      }
+      &_img {
+        width: 45.5rem;
+        height: 40.8rem;
+        margin-left: 2rem;
+        object-fit: cover;
+        margin-right: 3rem;
+      }
+      &_title {
+        margin-top: -1rem;
+      }
+      &_text_1 {
+        max-width: 45.4rem;
+      }
+      &_btn {
+        margin-top: -1.5rem;
+      }
+      &_flower_3 {
+        background-image: url("../assets/images/flower_3_cut.png");
+        max-width: 19.6rem;
+        height: 19.5rem;
+        left: -2px;
+        bottom: -40px;
+      }
+    }
+    &_feed {
+      margin-top: 4rem;
+      padding-top: 3rem;
+      padding-bottom: 4.9rem;
+      &_inner {
+        max-width: 94rem;
+        margin: 0 auto;
+      }
+      &_items {
+        padding: 3rem 4rem 0rem 5rem;
+      }
+      &_title {
+        margin-left: -1rem;
+        margin-bottom: 2rem;
+      }
+      &_text {
+        max-width: 81.3rem;
+      }
+      &_text_1 {
+        margin-bottom: 4rem;
+      }
+      &_title_1 {
+        margin-bottom: 2rem;
+      }
+      &_title_3 {
+        margin-left: -1rem;
+      }
+      &_pic_item:nth-child(1) {
+        margin-left: 0;
+      }
+      &_pic_item:nth-child(3) {
+        margin-right: 1rem;
+      }
+      &_btn {
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+      }
+      &_text {
+        margin-left: 0rem;
+        &-1 {
+          margin-left: -0.5rem;
+        }
+        &-2 {
+          margin-left: 0.1rem;
+        }
+        &-3 {
+          margin-left: 0.1rem;
+        }
+      }
+    }
+    &_comments {
+      padding-top: 10rem;
+      padding-bottom: 13.9rem;
+      &::after {
+        right: -41px;
+        bottom: -83px;
+        width: 20rem;
+        height: 32rem;
+      }
+      &_title {
+        margin-bottom: 3.1rem;
+      }
+      &_items {
+        justify-content: space-between;
+      }
+      &_item {
+        min-width: 29.3rem;
+        margin-right: 0;
+        &_1 {
+          margin-left: 2rem;
+        }
+        &_4 {
+          margin-right: 2rem;
+        }
+      }
+      &_input {
+        max-width: 39rem;
+        margin-bottom: 5.2rem;
+        &::-webkit-slider-thumb {
+          max-width: 7rem;
+        }
+      }
+      &_btn {
+        margin-left: 2rem;
+      }
+    }
+  }
+  .footer {
+    &_left {
+      margin-left: 3.4rem;
+    }
+    &_center {
+      left: 50%;
+      bottom: 5px;
+      &_item {
+        margin: 0;
+        margin-right: 4.8rem;
+      }
+      &_item:nth-child(4) {
+        margin-right: 0;
+      }
+    }
+    &_right {
+      margin-right: 3.9rem;
+      &_info {
+        position: absolute;
+        right: 16px;
+        bottom: 44px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    &_slider {
+      &_info {
+        flex-direction: column;
+        align-items: center;
+      }
+      &_img {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      &_description {
+        max-width: 62rem;
+      }
+    }
+    &_feed {
+      &_pic_item:nth-child(1)::after {
+        background-image: url("../assets/svg/arrow_cross.svg");
+        top: -1.8rem;
+        left: 16rem;
+        width: 9rem;
+        height: 3rem;
+      }
+      &_pic_item:nth-child(2)::after {
+        background-image: url("../assets/svg/arrow_cross.svg");
+        top: -1.8rem;
+        left: 16rem;
+        width: 9rem;
+        height: 3rem;
+      }
+    }
+    &_comments {
+      padding-top: 6rem;
+      &::after {
+        right: -50px;
+        bottom: 59px;
+        width: 16rem;
+        height: 20rem;
+      }
+      &_items {
+        flex-direction: column;
+        align-items: center;
+      }
+      &_item {
+        margin: 0;
+        max-width: 60rem;
+        height: 109px;
+        margin-bottom: 1.5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        overflow: hidden;
+      }
+      &_comment {
+        overflow: hidden;
+        text-overflow: clip;
+      }
+      &_info {
+        margin-left: 1rem;
+      }
+      &_btn {
+        margin: 0;
+        position: relative;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        max-width: 24rem;
+        margin-top: 5.1rem;
+      }
+    }
+  }
+  .footer {
+    &_right_sub {
+      display: none;
+    }
+    &_center {
+      transform: translate(0%, 0%);
+      left: 1rem;
+    }
+    &_left_items {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    &_inner {
+      padding-left: 1rem;
+    }
+    &_logo {
+      margin-right: 2rem;
+    }
+    &_nav_item {
+      margin-right: 2.8rem;
+    }
+  }
+  .main {
+    &_feed {
+      &_pic_bg {
+        margin-right: 1rem;
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    min-height: 3.4rem;
+    height: 3.4rem;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    &_inner {
+      padding: 0;
+    }
+    &_logo {
+      margin: 0;
+      border: none;
+      margin-left: -0.3rem;
+      margin-top: -0.2rem;
+      position: fixed;
+      left: 0;
+      z-index: 1002;
+    }
+    &_logo_item::after {
+      left: -6px;
+      bottom: -3px;
+    }
+    &_logo_text_menu &_logo_item::after {
+      background-image: url("../assets/svg/bamboo_orange.svg");
+    }
+    &_nav {
+      position: fixed;
+      transform: translateY(-200%);
+      transition: ease-in all 0.5s;
+      background-color: #fff;
+      z-index: 1000;
+      width: 100%;
+      overflow: hidden;
+    }
+    &_nav_link {
+      color: $black;
+    }
+    &_nav_show &_author_menu {
+      color: $black;
+    }
+    &_nav_show &_nav_item_1_menu {
+      margin-left: 0rem;
+    }
+    &_nav_show {
+      transform: translateY(0%);
+      z-index: 100;
+      left: 0;
+      right: 0;
+      position: fixed;
+      height: 32.9rem;
+      z-index: 1001;
+    }
+    &_nav_show &_nav_list_menu &_nav_item {
+      margin-bottom: 1.3rem;
+    }
+    &_nav_list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &_nav_list_menu {
+      margin-top: 5.4rem;
+      margin-left: 1rem;
+      z-index: 1001;
+    }
+    &_logo_text {
+      font-size: 12.29px;
+      line-height: 14.75px;
+      padding: 0;
+    }
+    &_logo_text_menu {
+      color: $orange;
+      font-size: 15.21px;
+      line-height: 18.25px;
+      font-weight: 400;
+      border: 1px solid $orange;
+      width: 6.5rem;
+      height: 4.1rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    &_nav_close {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      display: block;
+    }
+    &_inner_btn {
+      display: block;
+      position: fixed;
+      right: 2rem;
+      top: -0.9rem;
+      padding-top: 2rem;
+      cursor: pointer;
+      height: 4rem;
+      width: 1.8rem;
+      transition: all 0.3s;
+      z-index: 999;
+    }
+    &_btn {
+      height: 0.2rem;
+      display: block;
+      background-color: #fff;
+      margin-bottom: 0.2rem;
+      transition: all 0.5s;
+      width: 100%;
+    }
+  }
+  .main {
+    &_welcome {
+      height: 37rem;
+      background-position: center bottom 3rem;
+      &_word {
+        font-size: 5.4rem;
+        line-height: 4rem;
+        &:nth-child(2) {
+          margin-right: 2.2rem;
+        }
+        &:nth-child(3) {
+          margin-right: -3rem;
+        }
+        &:nth-child(4) {
+          margin-right: -0.9rem;
+        }
+        &:nth-child(5) {
+          margin-right: -0.3rem;
+          margin-top: 0.3rem;
+        }
+      }
+      &_title {
+        padding-top: 5rem;
+        align-items: flex-end;
+        margin-right: 4.1rem;
+      }
+      &_title::after {
+        width: 23.76rem;
+        height: 23.76rem;
+        left: 24.2rem;
+        top: 1rem;
+      }
+      &_btn_link {
+        position: absolute;
+        left: -89px;
+        bottom: -146px;
+        margin-left: 2rem;
+      }
+    }
+    &_slider {
+      margin-top: 3.8rem;
+      &_info {
+        align-items: flex-start;
+        margin-bottom: 8rem;
+      }
+      &_inner {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 1rem;
+        grid-gap: 2rem;
+      }
+      &_img {
+        display: none;
+      }
+      &_title {
+        font-weight: $fw-regular;
+      }
+      &_description {
+        max-width: 48.5rem;
+        margin-left: 1.6rem;
+      }
+      &_text {
+        margin-left: -0.7rem;
+        padding-bottom: 3.4rem;
+      }
+      &_title_1 {
+        padding-bottom: 2.3rem;
+      }
+      &_text_1 {
+        max-width: 49.5rem;
+        margin-left: -0.5rem;
+      }
+      &_item {
+        max-width: 28.5rem;
+        height: 33.2rem;
+        margin-bottom: 8rem;
+        min-height: 0;
+        &_6 {
+          display: none;
+        }
+        &_5 {
+          display: none;
+        }
+      }
+      &_left {
+        left: 41.6%;
+      }
+      &_right {
+        right: 33.1%;
+      }
+      &_item_title {
+        font-size: 12.47px;
+        line-height: 17.46px;
+        font-weight: $fw-medium;
+        margin-bottom: 0.3rem;
+      }
+      &_btn {
+        margin-top: -2rem;
+      }
+      &_flower_3 {
+        background-image: url("../assets/images/flower_3_cut_1.png");
+        max-width: 13.6rem;
+        height: 27.8rem;
+      }
+      &_item_name {
+        font-size: 11.69px;
+        line-height: 14.03px;
+        font-weight: $fw-light;
+        margin-top: -0.4rem;
+      }
+      &_item_text {
+        margin-left: 1rem;
+        margin-top: -0.5rem;
+      }
+      &_item_img {
+        height: 28.3rem;
+        margin-bottom: 0.5rem;
+      }
+      &_item_pic {
+        width: 25.8px;
+        height: 29px;
+        margin-top: -0.5rem;
+      }
+      &_item_pic_fish {
+        width: 29.8px;
+        height: 29px;
+        margin-top: -0.5rem;
+      }
+      &::after {
+        display: block;
+        background-image: url("../assets/images/flower_cut.png");
+        overflow: hidden;
+        right: -8rem;
+        top: -13.5rem;
+      }
+      &::before {
+        background-image: url("../assets/images/flower_1_1_1.png");
+        right: -96px;
+        bottom: -73px;
+      }
+    }
+    &_feed {
+      margin-top: 0rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      &_inner {
+        padding-bottom: 1rem;
+      }
+      &_items {
+        padding: 1rem;
+      }
+      &_title {
+        font-size: 4.2rem;
+        line-height: 5.04rem;
+        margin-left: 0rem;
+      }
+      &_text {
+        font-size: 1.6rem;
+        line-height: 2.08rem;
+      }
+      &_text_1 {
+        margin-bottom: 3rem;
+        max-width: 60rem;
+        width: 100%;
+      }
+      &_title_1 {
+        font-size: 2.2rem;
+        line-height: 26.4px;
+        margin-left: 0rem;
+      }
+      &_title_3 {
+        margin-left: 0.3rem;
+        margin-bottom: 2rem;
+      }
+      &_pic_item:nth-child(1)::after {
+        top: -0.5rem;
+        left: 13.5rem;
+        z-index: 2;
+      }
+      &_pic_item:nth-child(2)::after {
+        top: -0.6rem;
+        left: 13.4rem;
+        z-index: 2;
+      }
+      &_text-1 {
+        margin-left: 0;
+      }
+      &_btn {
+        margin-top: 2.5rem;
+        padding-top: 1.6rem;
+      }
+    }
+    &_comments {
+      &::after {
+        bottom: -66px;
+      }
+      &_popup_show {
+        display: block;
+        animation: leftPopup 0.6s linear;
+      }
+      &_btn_close {
+        position: absolute;
+        background-image: url("../assets/svg/close.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1.4rem;
+        height: 1.4rem;
+        right: 1rem;
+        top: 1.3rem;
+      }
+      padding-bottom: 5.5rem;
+    }
+  }
+  .footer {
+    &_left {
+      margin-left: 1rem;
+      &_items {
+        right: 2rem;
+        top: 0;
+      }
+      &_item {
+        margin: 0;
+        margin-bottom: 2rem;
+        height: 2.6rem;
+        width: 2.6rem;
+        &:nth-child(2) {
+          margin-bottom: 2rem;
+        }
+        &:nth-child(3) {
+          margin-bottom: 1.5rem;
+        }
+        &:nth-child(4) {
+          margin-bottom: 0;
+        }
+      }
+      &_btn {
+        margin-bottom: 10.1rem;
+      }
+      &_item_link {
+        font-size: 0;
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        visibility: hidden;
+        transition: 0;
+      }
+    }
+    &_left_logo {
+      margin-top: 1.3rem;
+      margin-bottom: 3.6rem;
+    }
+    &_center {
+      left: 2.1rem;
+      bottom: 0;
+      &_item {
+        margin-right: 3.7rem;
+      }
+    }
+    &_right {
+      &_info {
+        right: 18px;
+        bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .main {
+    &_welcome {
+      &_title {
+        align-items: center;
+      }
+      &_title::after {
+        left: 5rem;
+      }
+      &_btn_link {
+        margin: 0;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 4rem;
+        position: relative;
+      }
+    }
+    &_slider {
+      &::after {
+        background-image: url("../assets/images/flower_cut_1.png");
+        right: -13rem;
+        top: -19.5rem;
+      }
+      &_description {
+        margin-right: 1rem;
+        margin-left: 0;
+      }
+      &_title {
+        font-size: 3.8rem;
+        line-height: 4.8rem;
+      }
+      &_left {
+        left: 31.6%;
+      }
+      &_right {
+        right: 19.1%;
+      }
+    }
+    &_feed {
+      &_pictures {
+        flex-direction: column;
+        align-items: center;
+      }
+      &_pic_item:nth-child(1)::after {
+        transform: rotate(90deg);
+        top: 17.5rem;
+      }
+      &_pic_item:nth-child(2)::after {
+        transform: rotate(90deg);
+        top: 19.4rem;
+      }
+    }
+  }
+  .footer {
+    &_left_logo {
+      margin: 2rem auto;
+      display: flex;
+      border: none;
+      &_item {
+        margin-left: 1rem;
+      }
+    }
+    &_inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &_left_items {
+      transform: translate(-50%, -50%);
+      display: flex;
+      position: absolute;
+      left: 50%;
+      top: 8rem;
+      margin-left: 2rem;
+    }
+    &_left_btn {
+      margin-top: 8rem;
+    }
+    &_left_item {
+      margin-right: 2rem;
+    }
+    &_right_info {
+      max-width: 24rem;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .main {
+    &_slider {
+      &_item {
+        height: 37rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    &_logo {
+      margin-left: -1rem;
+      padding: 0;
+      margin-top: 0.3rem;
+    }
+    &_inner_btn {
+      right: 1rem;
+      top: -0.8rem;
+    }
+  }
+  .main {
+    &_welcome {
+      height: 18.7rem;
+      background-position: center bottom 5%;
+      &_title {
+        align-items: flex-end;
+        margin-left: -1.7rem;
+        padding-top: 4.1rem;
+      }
+      &_title::after {
+        width: 11.9rem;
+        height: 11.9rem;
+        overflow: hidden;
+        left: 17rem;
+        top: 2.2rem;
+      }
+      &_word {
+        font-size: 2.7rem;
+        line-height: 2rem;
+        &:nth-child(2) {
+          margin-right: 1.4rem;
+        }
+        &:nth-child(3) {
+          margin-right: -1.2rem;
+          margin-top: 0.2rem;
+        }
+        &:nth-child(4) {
+          margin-right: -0.3rem;
+        }
+        &:nth-child(5) {
+          margin-right: 0.3rem;
+        }
+      }
+      &_btn_link {
+        left: 54.5%;
+        top: 8.7rem;
+      }
+    }
+    &_slider {
+      padding-bottom: 6.1rem;
+      &::after {
+        top: -18.9rem;
+      }
+      &::before {
+        background-image: url("../assets/images/flower_3_cut_1_1.png");
+        right: 131px;
+        bottom: -98px;
+      }
+      &_flower_3 {
+        background-image: url("../assets/images/flower_1_1_1_1.png");
+        width: 10rem;
+        height: 8rem;
+        bottom: -0.4%;
+        left: 73.6%;
+      }
+
+      &_title {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        letter-spacing: 0;
+      }
+      &_description {
+        margin-top: 7.8rem;
+      }
+      &_text {
+        margin-left: 0;
+        padding-bottom: 2.4rem;
+        padding-top: 1rem;
+      }
+      &_title_1 {
+        padding-bottom: 1rem;
+      }
+      &_text_1 {
+        margin-left: 0;
+      }
+      &_inner {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        grid-gap: 0;
+      }
+      &_left {
+        display: none;
+      }
+      &_right {
+        display: none;
+      }
+      &_item {
+        max-width: 28.5rem;
+        height: 332px;
+        margin-bottom: 2rem;
+        &_3 {
+          margin-top: 0;
+        }
+        &:nth-of-type(6) {
+          margin-top: 0;
+        }
+      }
+      &_info {
+        margin-bottom: 4rem;
+      }
+      &_btn {
+        margin-top: 0rem;
+      }
+    }
+    &_feed {
+      &_inner {
+        padding-bottom: 1px;
+      }
+      &_text_text_1 {
+        display: none;
+      }
+      &_text_1 {
+        display: none;
+      }
+      &_text-1 {
+        margin-top: -1rem;
+        margin-bottom: 4rem;
+      }
+      &_text-2 {
+        margin-top: -1.5rem;
+        margin-bottom: 3rem;
+      }
+      &_text-3 {
+        margin-top: -1.5rem;
+        margin-left: 0.4rem;
+      }
+      &_title {
+        font-size: 2.4rem;
+        line-height: 2.88rem;
+        text-align: center;
+        margin-bottom: 1.2rem;
+        margin-top: 1rem;
+      }
+      &_title_1 {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        text-align: center;
+      }
+      &_title_3 {
+        font-size: 2.4rem;
+        line-height: 2.88rem;
+        text-align: center;
+      }
+      &_pic_item:nth-child(1)::after {
+        transform: rotate(90deg);
+        top: 19.5rem;
+        left: 14rem;
+      }
+      &_pic_item:nth-child(2)::after {
+        transform: rotate(90deg);
+        top: 19.8rem;
+        left: 14rem;
+      }
+      &_btn {
+        margin-top: 1.8rem;
+        margin-bottom: 3.9rem;
+      }
+    }
+    &_comments {
+      padding-top: 3rem;
+      padding-bottom: 3.4rem;
+      &::after {
+        right: -30px;
+        bottom: -36px;
+        width: 9rem;
+        height: 10rem;
+      }
+      &_title {
+        font-size: 24.4px;
+        line-height: 28.8px;
+        margin-bottom: 2.1rem;
+      }
+      &_comment {
+        margin-top: 0.5rem;
+      }
+      &_btn {
+        margin-top: 4.1rem;
+      }
+    }
+  }
+  .footer {
+    &_left {
+      &_logo {
+        margin-left: 7.4rem;
+        &_item {
+          margin-left: 0.5rem;
+        }
+      }
+      &_items {
+        left: 38%;
+      }
+      &_item {
+        margin-right: 5.6rem;
+      }
+      &_btn {
+        margin-top: 8.6rem;
+        margin-left: -1.3rem;
+        margin-bottom: 11.4rem;
+      }
+    }
+    &_right {
+      &_info {
+        left: 62%;
+        bottom: 42px;
+      }
+      &_design {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 1.4rem;
+      }
+      &_rs {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+    &_center {
+      left: 2.1rem;
+      bottom: 0px;
+      &_item {
+        margin-right: 3rem;
+      }
+    }
+  }
+}
+
+@keyframes leftPopup {
+  0% {
+    opacity: 0.5;
+    left: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 50%;
+  }
+}
