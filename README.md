@@ -14,8 +14,6 @@
 
 ## [Bird Quiz](https://rolling-scopes-school.github.io/pain4metoo-JSFE2022Q3/songbird/)
 
-## [English Quiz](https://pain4metoo.github.io/english-quiz/)
-
 ## [CV2 ](https://pain4metoo.github.io/old-projects/cv1/)
 
 ## [CV1 ](https://pain4metoo.github.io/old-projects/cv/)
@@ -23,5 +21,3 @@
 ## [Js Clock](https://pain4metoo.github.io/old-projects/js-clock/)
 
 ## [Video Player](https://pain4metoo.github.io/old-projects/video-player/)
-
-## [My First Website](https://pain4metoo.github.io/old-projects/myFirstWebsite)
