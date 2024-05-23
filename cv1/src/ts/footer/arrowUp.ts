@@ -1,0 +1,1 @@
+export const arrowUp: any = document.querySelector('.footer_arrow');

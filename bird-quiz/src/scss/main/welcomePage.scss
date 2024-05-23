@@ -1,0 +1,76 @@
+.welcome {
+  &_title_1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    color: $text1;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  &_title_2 {
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+    color: $text1;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  &_title_3 {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+    color: $text1;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+  &_rule {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    color: $text1;
+    list-style: none;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid $btn3;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: $bg3;
+    padding-left: 4rem;
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 1.5rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background: $btn3;
+    }
+  }
+  &_btn {
+    display: block;
+    margin: 0 auto;
+    max-width: 32rem;
+    width: 100%;
+    min-height: 5rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+    margin-top: 2rem;
+    background: $btn3;
+    &:hover {
+      background: $btn-hover3;
+    }
+  }
+}

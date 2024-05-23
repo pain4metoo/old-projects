@@ -1,0 +1,83 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  &_inner {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    background: $bg3;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 100%;
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(var(--card-height) / 6);
+      left: 0;
+      right: 0;
+      z-index: -1;
+      height: 100%;
+      max-width: 130rem;
+      width: 100%;
+      margin: 0 auto;
+      transform: scale(0.8);
+      filter: blur(calc(var(--card-height) / 4));
+      background-image: linear-gradient(
+        var(--rotate),
+        #5ddcff,
+        #3c67e3 43%,
+        #4e00c2
+      );
+      opacity: 1;
+      transition: opacity 0.5s;
+      animation: spin 2.5s linear infinite;
+    }
+    &::before {
+      content: "";
+      max-width: 135rem;
+      width: 100.5%;
+      height: 100.5%;
+      border-radius: 1rem;
+      background-image: linear-gradient(
+        var(--rotate),
+        #5ddcff,
+        #3c67e3 43%,
+        #4e00c2
+      );
+      position: absolute;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      animation: spin 2.5s linear infinite;
+    }
+  }
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}

@@ -1,0 +1,42 @@
+@import "./variables.scss";
+@import "./normalize.scss";
+@import "./fonts.scss";
+@import "./header.scss";
+@import "./main.scss";
+@import "./footer.scss";
+@import "./preload.scss";
+@import "./scroll.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  height: 100%;
+  scroll-behavior: smooth;
+  background: #000;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+  color: $color-main;
+}
+
+.container {
+  max-width: 140rem;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

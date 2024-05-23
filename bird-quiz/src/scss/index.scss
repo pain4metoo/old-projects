@@ -1,0 +1,40 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./header/header.scss";
+@import "./main/main.scss";
+@import "./main/welcomePage.scss";
+@import "./main/quizPage.scss";
+@import "./main/scorePage.scss";
+@import "./main/galleryPage.scss";
+@import "./footer/footer.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Titillium", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

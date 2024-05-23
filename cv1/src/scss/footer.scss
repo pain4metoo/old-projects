@@ -1,0 +1,99 @@
+@media (min-width: 280px) {
+  .footer {
+    padding: 1rem;
+    background-color: $color-bg;
+    position: relative;
+    &_inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_link_rs {
+      text-decoration: none;
+    }
+    &_img_rs {
+      width: 5rem;
+      height: 5rem;
+      transition: all 0.5s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &_year {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    &_link_git {
+      text-decoration: none;
+      color: $color-main;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    &_img_git {
+      width: 5rem;
+      height: 5rem;
+      transition: all 0.5s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &_arrow {
+      position: absolute;
+      right: 1rem;
+      top: -20rem;
+      background-image: url("../assets/images/arrow-up.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 4rem;
+      height: 4rem;
+      transition: all 0.5s;
+      animation: arrow 5s linear infinite;
+      text-decoration: none;
+      border: 1px solid $color-main;
+      opacity: 0;
+      transform: translateX(-25000%);
+      overflow: hidden;
+    }
+  }
+
+  .show_arrow {
+    opacity: 1;
+    transform: translateX(0%);
+    position: absolute;
+  }
+
+  @keyframes arrow {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  .footer {
+    &_year {
+      font-size: 2.3rem;
+    }
+    &_img_git {
+      width: 8rem;
+      height: 8rem;
+    }
+    &_img_rs {
+      width: 8rem;
+      height: 8rem;
+    }
+    &_arrow {
+      width: 8rem;
+      height: 8rem;
+      top: -30rem;
+    }
+  }
+}

@@ -1,0 +1,803 @@
+@import "./variables.scss";
+
+@media (min-width: 280px) {
+  .main {
+    padding: 1rem;
+    background-color: $color-bg;
+    &_about_img {
+      display: block;
+      padding: 3rem;
+      padding-bottom: 2rem;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+    &_about_title {
+      font-size: 2rem;
+      line-height: 3rem;
+      font-weight: 300;
+    }
+    &_about_inner {
+      max-width: 70rem;
+      margin: 0 auto;
+    }
+    &_about_text {
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+      margin-top: 1rem;
+      font-weight: 300;
+    }
+    &_title_projects {
+      font-size: 3rem;
+      line-height: 3.1rem;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+      padding: 4rem 0;
+    }
+    &_projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+      max-width: 70rem;
+      padding: 1rem;
+    }
+    &_project {
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      min-width: 25rem;
+      min-height: 34rem;
+      width: 100%;
+      text-decoration: none;
+      color: $color-main;
+      border-left: 5px solid rgba(255, 255, 255, 0.11);
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    &_project_title {
+      font-size: 2rem;
+      line-height: 2.7rem;
+      font-weight: bold;
+      margin: 2rem 0rem;
+      text-align: center;
+    }
+    &_project_img {
+      min-height: 30rem;
+      width: 100%;
+      max-height: 56rem;
+      object-fit: cover;
+      transition: ease 0.5s;
+    }
+    &_project_text {
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+      color: $color-main;
+    }
+    &_project_btn {
+      z-index: 1;
+      margin-left: 3rem;
+      position: relative;
+      overflow: hidden;
+      background-color: transparent;
+      color: $color-main;
+      max-width: 16rem;
+      text-align: center;
+      border: 0.1rem solid #e1a87a;
+      padding: 1rem 4rem;
+      cursor: pointer;
+      transition: ease-in 0.5s;
+      margin: 0 auto;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      &:hover {
+        border-color: transparent;
+      }
+    }
+    &_skills_description {
+      padding: 0;
+      margin-left: 1rem;
+      list-style: none;
+    }
+    &_skills_title {
+      font-size: 3rem;
+      line-height: 3.1rem;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+      padding: 4rem 0;
+    }
+    &_skills_items {
+      padding-left: 2rem;
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    &_skills_item {
+      margin-bottom: 1rem;
+    }
+    &_skills_text {
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      min-width: 25rem;
+      max-width: 110rem;
+      margin: 0 auto;
+      width: 100%;
+      border-left: 5px solid rgba(255, 255, 255, 0.11);
+      padding: 1rem;
+    }
+    &_skills_about {
+      font-size: 1.6rem;
+      line-height: 2.7rem;
+      padding-left: 1rem;
+      margin: 0;
+    }
+    &_skills_about_1 {
+      color: #08fdd8;
+    }
+    &_skills_about_2 {
+      color: #ff2253;
+    }
+    &_skills_about_3 {
+      color: #d26cd5;
+    }
+    &_skills_about_4 {
+      color: #ffeecd;
+    }
+    &_skills_grafic {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      border: 2rem solid transparent;
+      margin: 2rem auto;
+      position: relative;
+      margin-bottom: 2rem;
+      transition: linear 3s;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+    &_skills_circle {
+      position: absolute;
+      left: -2rem;
+      bottom: -2rem;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      transition: all 0.05s;
+    }
+    &_skills_circle_html.active {
+      border-bottom: 2rem solid transparent;
+      border-right: 2rem solid transparent;
+      border-left: 2rem solid transparent;
+      border-top: 2rem solid #08fdd8;
+      animation: html 3s linear;
+    }
+    &_skills_circle_js.active {
+      border-bottom: 2rem solid transparent;
+      border-right: 2rem solid #ff2253;
+      border-left: 2rem solid transparent;
+      border-top: 2rem solid transparent;
+      animation: js 3s linear;
+    }
+    &_skills_circle_ts.active {
+      border-bottom: 2rem solid #d26cd5;
+      border-right: 2rem solid transparent;
+      border-left: 2rem solid transparent;
+      border-top: 2rem solid transparent;
+      animation: react 3s linear;
+    }
+    &_skills_circle_react.active {
+      border-bottom: 2rem solid transparent;
+      border-right: 2rem solid transparent;
+      border-left: 2rem solid #ffeecd;
+      border-top: 2rem solid transparent;
+      animation: git 3s linear;
+    }
+    &_skills_inner {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      border-left: 5px solid rgba(255, 255, 255, 0.11);
+    }
+    &_space_line {
+      display: block;
+      width: 100%;
+      height: 1rem;
+      background: red;
+    }
+    &_description_inner {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+    }
+    &_description_title {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 0;
+      margin-top: 1rem;
+      margin-bottom: -0.8rem;
+    }
+    &_description_item {
+      display: inline-block;
+      background: transparent;
+      width: 100%;
+      height: 0.3rem;
+    }
+    &_description_html {
+      background-color: #08fdd8;
+    }
+    &_description_js {
+      background-color: #ff2253;
+    }
+    &_description_react {
+      background-color: #d26cd5;
+    }
+    &_description_git {
+      background-color: #ffeecd;
+    }
+    &_description_anim_html.active {
+      transition: ease-in-out;
+      animation: line 4s;
+    }
+    &_description_anim_js.active {
+      transition: ease-in-out;
+      animation: line 3s;
+    }
+    &_description_anim_react.active {
+      transition: ease-in-out;
+      animation: line 2s;
+    }
+    &_description_anim_git.active {
+      transition: ease-in-out;
+      animation: line 1s;
+    }
+    &_about_img_text {
+      display: block;
+      padding: 3rem;
+      padding-bottom: 2rem;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+    &_code {
+      margin: 1rem;
+    }
+    &_code_title {
+      font-size: 3rem;
+      line-height: 3.1rem;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+      padding: 3rem 0;
+    }
+    &_education_title {
+      margin: 0;
+      text-align: center;
+      padding: 4rem 0;
+    }
+    &_education_inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &_education_text {
+      font-weight: 300;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+      position: relative;
+      &:nth-of-type(2) {
+        margin-left: 3rem;
+      }
+      &:nth-of-type(2)::after {
+        content: "";
+        position: absolute;
+        left: -0.5rem;
+        top: -1rem;
+        width: 0.1rem;
+        height: 5rem;
+        background: yellow;
+      }
+    }
+    &_lang_title {
+      margin: 0;
+      text-align: center;
+      padding: 4rem 0;
+      padding-bottom: 2rem;
+    }
+    &_lang_items {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    &_lang_item {
+      font-weight: 300;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
+    &_contacts_title {
+      margin: 0;
+      text-align: center;
+      padding: 4rem 0;
+      padding-bottom: 2rem;
+    }
+    &_contacts_items {
+      margin: 1rem;
+      margin-bottom: 0;
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &_contacts_item {
+      margin-bottom: 1rem;
+    }
+    &_contacts_link {
+      text-decoration: none;
+      color: $color-main;
+      transition: all 0.5s;
+      border-width: 2rem;
+      border-color: red;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &_contacts_img {
+      width: 5rem;
+      height: 5rem;
+      transition: linear;
+    }
+    &_contacts_img_link {
+      border: 1rem solid rgba(65, 105, 225, 0.5);
+      animation: borderLink 5s infinite alternate-reverse;
+    }
+    &_contacts_img_git {
+      border: 1rem solid rgba(55, 55, 55, 0.5);
+      animation: borderGit 5s infinite alternate-reverse;
+    }
+    &_contacts_img_phone {
+      border: 1rem solid rgba(123, 232, 76, 0.5);
+      animation: borderPhone 5s infinite alternate-reverse;
+    }
+  }
+
+  .anim_0 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.05rem;
+      opacity: 0.4;
+      background-color: #e1a87a;
+    }
+  }
+
+  .main_project:active .momentum {
+    transform: scale(0.9);
+    box-shadow: 0px -2rem 1rem rgba(#08fdd8, 0.5);
+  }
+
+  .main_project:active .louvre {
+    transform: scale(0.9);
+    box-shadow: 2rem 0px 1rem rgba(#ff2253, 0.5);
+  }
+
+  .main_project:active .art {
+    transform: scale(0.9);
+    box-shadow: 0px 2rem 1rem rgba(#d26cd5, 0.5);
+  }
+
+  .main_project:active .english {
+    transform: scale(0.9);
+    box-shadow: -2rem 0px 1rem rgba(#ffeecd, 0.5);
+  }
+
+  .main_project:hover .momentum {
+    transform: scale(0.9);
+    box-shadow: 0px -2rem 1rem rgba(#08fdd8, 0.5);
+  }
+
+  .main_project:hover .louvre {
+    transform: scale(0.9);
+    box-shadow: 2rem 0px 1rem rgba(#ff2253, 0.5);
+  }
+
+  .main_project:hover .art {
+    transform: scale(0.9);
+    box-shadow: 0px 2rem 1rem rgba(#d26cd5, 0.5);
+  }
+
+  .main_project:hover .english {
+    transform: scale(0.9);
+    box-shadow: -2rem 0px 1rem rgba(#ffeecd, 0.5);
+  }
+
+  .main_project:hover .main_project_btn:before {
+    transform: translateX(0);
+    color: white;
+  }
+
+  .main_project_btn:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: #e1a87a;
+    transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  .main_project_btn:hover:before {
+    transform: translateX(0);
+    color: white;
+  }
+
+  .hljs {
+    display: block;
+    padding: 1rem;
+    background: #1a1a1c;
+    font-size: 1.7rem;
+    padding-left: 0;
+    padding-left: 0.3rem;
+    line-height: 2.7rem;
+    font-weight: 300;
+    color: white;
+    width: 100%;
+  }
+
+  .hljs-params {
+    color: gray;
+  }
+
+  .hljs-string {
+    color: green;
+  }
+
+  .hljs-function {
+    color: #e1a87a;
+  }
+
+  .main_skills_grafic:hover .main_skills_circle_html {
+    box-shadow: 0px -2rem 1rem rgba(#08fdd8, 0.5);
+  }
+
+  .main_skills_grafic:hover .main_skills_circle_js {
+    box-shadow: 2rem 0px 1rem rgba(#ff2253, 0.5);
+  }
+
+  .main_skills_grafic:hover .main_skills_circle_ts {
+    box-shadow: 0px 2rem 1rem rgba(#d26cd5, 0.5);
+  }
+
+  .main_skills_grafic:hover .main_skills_circle_react {
+    box-shadow: -2rem 0px 1rem rgba(#ffeecd, 0.5);
+  }
+
+  @keyframes borderLink {
+    0% {
+      border-width: 0.5rem;
+    }
+    50% {
+      border-width: 0.7rem;
+      box-shadow: 1rem 0rem 1rem rgba(65, 105, 225, 0.5),
+        1rem 0rem 1rem rgba(65, 105, 225, 0.5);
+    }
+    100% {
+      border-width: 1rem;
+    }
+  }
+
+  @keyframes borderGit {
+    0% {
+      border-width: 0.5rem;
+    }
+    50% {
+      border-width: 0.7rem;
+      box-shadow: 1rem 0px 1rem rgba(55, 55, 55, 0.5);
+    }
+    100% {
+      border-width: 1rem;
+    }
+  }
+
+  @keyframes borderPhone {
+    0% {
+      border-width: 0.5rem;
+    }
+    50% {
+      border-width: 0.7rem;
+      box-shadow: -1rem 0px 1rem rgba(123, 232, 76, 0.5);
+    }
+    100% {
+      border-width: 1rem;
+    }
+  }
+
+  @keyframes line {
+    0% {
+      width: 20%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes html {
+    0% {
+      box-shadow: 0px -2rem 1rem rgba(#08fdd8, 0.3);
+      border-top: 1rem solid transparent;
+    }
+    50% {
+      border-top: 1.5rem solid #08fdd8;
+      box-shadow: 0px -2rem 1rem rgba(#08fdd8, 0.5);
+    }
+    100% {
+      border-top: 2rem solid #08fdd8;
+      box-shadow: 0px -2rem 1rem rgba(#08fdd8, 0.1);
+    }
+  }
+
+  @keyframes js {
+    0% {
+      box-shadow: 2rem 0px 1rem rgba(#ff2253, 0.3);
+      border-right: 1rem solid transparent;
+    }
+    50% {
+      border-right: 1.5rem solid #ff2253;
+      box-shadow: 2rem 0px 1rem rgba(#ff2253, 0.5);
+    }
+    100% {
+      border-right: 2rem solid #ff2253;
+      box-shadow: 2rem 0px 1rem rgba(#ff2253, 0.1);
+    }
+  }
+
+  @keyframes react {
+    0% {
+      box-shadow: 0px 2rem 1rem rgba(#d26cd5, 0.3);
+      border-bottom: 1rem solid transparent;
+    }
+    50% {
+      border-bottom: 1.5rem solid #d26cd5;
+      box-shadow: 0px 2rem 1rem rgba(#d26cd5, 0.5);
+    }
+    100% {
+      border-bottom: 2rem solid #d26cd5;
+      box-shadow: 0px 2rem 1rem rgba(#d26cd5, 0.1);
+    }
+  }
+
+  @keyframes git {
+    0% {
+      box-shadow: -2rem 0px 1rem rgba(#ffeecd, 0.3);
+      border-left: 1rem solid transparent;
+    }
+    50% {
+      border-left: 1.5rem solid #ffeecd;
+      box-shadow: -2rem 0px 1rem rgba(#ffeecd, 0.5);
+    }
+    100% {
+      border-left: 2rem solid #ffeecd;
+      box-shadow: -2rem 0px 1rem rgba(#ffeecd, 0.1);
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  .main {
+    &_about {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &_about_img {
+      max-width: 60rem;
+    }
+    &_about_img_text {
+      max-width: 76rem;
+    }
+    &_projects {
+      max-width: 110rem;
+    }
+    &_skills_grafic {
+      width: 30rem;
+      height: 30rem;
+    }
+    &_skills_about {
+      font-size: 1.9rem;
+      line-height: 3.7rem;
+      font-weight: 400;
+      margin: 1rem;
+    }
+    &_skills_circle {
+      width: 30rem;
+      height: 30rem;
+    }
+    &_about_title {
+      font-size: 2.3rem;
+      line-height: 3.1rem;
+    }
+    &_about_text {
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+    }
+    &_description_title {
+      font-size: 1.9rem;
+      line-height: 2.7rem;
+    }
+    &_code_text {
+      font-size: 2.1rem;
+      line-height: 3.7rem;
+    }
+    &_title_projects {
+      font-size: 4rem;
+    }
+    &_project_title {
+      font-size: 3rem;
+    }
+    &_project_text {
+      font-size: 2.5rem;
+      line-height: 4.1rem;
+    }
+    &_skills_title {
+      font-size: 4rem;
+    }
+    &_description_title {
+      font-size: 2.3rem;
+      line-height: 3.5rem;
+    }
+    &_code_title {
+      font-size: 4rem;
+    }
+    &_education_title {
+      font-size: 4rem;
+    }
+    &_education_text {
+      font-size: 3rem;
+      line-height: 4.7rem;
+    }
+    &_education_text:nth-of-type(2)::after {
+      height: 8rem;
+    }
+    &_lang_title {
+      font-size: 4rem;
+    }
+    &_lang_item {
+      font-size: 3rem;
+      line-height: 4.7rem;
+    }
+    &_contacts_title {
+      font-size: 4rem;
+    }
+    &_contacts_items {
+      margin-top: 5rem;
+    }
+    &_contacts_img {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .main {
+    &_about_title {
+      font-size: 2.5rem;
+      line-height: 3.7rem;
+    }
+    &_about_text {
+      font-size: 2rem;
+      line-height: 2.7rem;
+    }
+    &_about_img {
+      max-width: 80rem;
+    }
+    &_about_img_text {
+      max-width: 65rem;
+    }
+    &_projects {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3rem;
+      max-width: 190rem;
+    }
+    &_project {
+      min-height: 92rem;
+      margin-bottom: 2rem;
+    }
+    &_project_img {
+      max-height: 56rem;
+      height: 100%;
+      margin-bottom: 2rem;
+    }
+    &_project_text {
+      height: 17rem;
+      font-size: 2.1rem;
+      line-height: 2.7rem;
+      margin: 0;
+      margin-left: 1rem;
+    }
+    &_skills_inner {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+    &_skills_grafic {
+      max-width: 50rem;
+      height: 50rem;
+      width: 100%;
+      margin: 2rem;
+    }
+    &_skills_circle {
+      width: 109%;
+      height: 109%;
+    }
+    &_skills_description {
+      width: 100%;
+    }
+    &_description_title {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+    &_skills_text {
+      display: flex;
+      align-items: center;
+    }
+    &_skills_text {
+      max-width: 190rem;
+    }
+    &_edlang_info {
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 5rem;
+    }
+    .hljs {
+      font-size: 2.5rem;
+      line-height: 4rem;
+      max-width: 130rem;
+      margin: 0 auto;
+      padding-left: 4rem;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .main {
+    &_about_title {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    &_about_text {
+      font-size: 2.2rem;
+      line-height: 3.1rem;
+    }
+    &_about_img {
+      max-width: 85rem;
+    }
+    &_projects {
+      min-height: 87rem;
+    }
+    &_project_text {
+      height: 12rem;
+    }
+    &_skills_inner {
+      justify-content: space-between;
+    }
+    &_skills_description {
+      max-width: 105rem;
+      margin-right: 10rem;
+    }
+    &_skills_about {
+      font-size: 2.1rem;
+      line-height: 3.7rem;
+    }
+    &_skills_text {
+      max-width: 100%;
+    }
+  }
+}

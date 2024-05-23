@@ -1,0 +1,56 @@
+.preload {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  z-index: 999999;
+  visibility: visible;
+  overflow: hidden;
+}
+
+.load {
+  background-image: url("../assets/gif/ghost.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    border: 2px solid yellow;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    animation: g1 ease 4s infinite;
+  }
+}
+
+@keyframes g1 {
+  0% {
+    opacity: 0.3;
+    width: 14rem;
+    height: 14rem;
+  }
+  50% {
+    opacity: 0.6;
+    width: 20rem;
+    height: 20rem;
+  }
+  100% {
+    opacity: 0.9;
+    width: 11rem;
+    height: 11rem;
+  }
+}
